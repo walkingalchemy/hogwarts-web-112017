@@ -9,7 +9,7 @@ export default class PigList extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="pig-list">
         {this.buildPigs()}
       </div>
     )

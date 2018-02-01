@@ -14,8 +14,10 @@ export default class FilterBox extends React.Component {
   render() {
     return (
       <div>
-        <label for='greased'> Greased Pigs only! </label>
-        <input name='greased' type='checkbox' value='greased' onChange={this.handleFilterChange}/>
+        <div className="checkboxes">
+          <label for='greased'> Greased Pigs only! </label>
+          <input name='greased' type='checkbox' value='greased' onChange={this.handleFilterChange}/>
+        </div>
         <select name="sort" onChange={this.handleSortChange}>
           <option value="alphabet">Alphbetical</option>
           <option value="weight">Weight</option>
